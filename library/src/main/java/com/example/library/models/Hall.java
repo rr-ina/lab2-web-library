@@ -17,7 +17,7 @@ public class Hall {
     private String location;
 
     // Зв’язок один-до-багатьох з книгами
-    @OneToMany(mappedBy = "hall", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "hall")
     private List<Book> books;
 
     // Конструктори
