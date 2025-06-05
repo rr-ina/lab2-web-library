@@ -4,7 +4,6 @@ import com.example.library.models.Book;
 import com.example.library.models.Hall;
 import com.example.library.repository.BookRepository;
 import com.example.library.repository.HallRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
