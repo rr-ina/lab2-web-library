@@ -9,6 +9,7 @@
     <div class="container mt-5">
         <h1 class="mb-4" th:text="${book.id != null} ? 'Редагувати книгу' : 'Додати книгу'"></h1>
         <form th:action="@{/books}" th:object="${book}" method="post" class="needs-validation" novalidate>
+            <input type="hidden" th:field="*{id}" />
             <div class="mb-3">
                 <label for="title" class="form-label">Назва</label>
                 <input type="text" class="form-control" id="title" th:field="*{title}" required>
